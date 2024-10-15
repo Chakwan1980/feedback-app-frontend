@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: feedback-app-frontend-service
 spec:
-  type: NodePort
+  type: LoadBalancer 
   ports:
   - port: 80
     targetPort: 80
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: feedback-app-frontend
-        image: rosaflores/feedback-app-frontend:v3
+        image: rosaflores/feedback-app-frontend:v3.0
         resources:
           requests:
             memory: "64Mi"

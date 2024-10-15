@@ -18,7 +18,6 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 
-
 # Definition: A Dockerfile:
 # is a text file that contains the instructions for building a Docker image. Essentially, 
 # it defines the steps required to package an application along with all its
